@@ -1,9 +1,12 @@
 package sreles;
 
-public class MallardDuck extends Duck {
-	public MallardDuck() {
-		quackBehavior = new Quack();
-		flyBehavior = new FlyWithWings();
+public class MallardDuck implements Duck {
+	public void quack() {
+		System.out.println("Quack");
+	}
+	
+	public void fly() {
+		System.out.println("I'm flying");
 	}
 	
 	public void display() {
